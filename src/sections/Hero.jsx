@@ -29,7 +29,7 @@ const Hero = () => {
                     <Suspense fallback={<CanvasLoader/>}>
                         <PerspectiveCamera makeDefault position={[0, 0, 20]}/>
                         <HeroCamera isMobile={isMobile}>
-                            <HackerRoom position={sizes.deskPosition}  rotation={[0, Math.PI, 0]} scale={sizes.deskScale} />
+                            <HackerRoom position={sizes.deskPosition}  rotation={[0, -Math.PI, 0]} scale={sizes.deskScale} />
                         </HeroCamera>
                         <group>
                             <Target position={sizes.targetPosition}/>
@@ -40,7 +40,9 @@ const Hero = () => {
                         <ambientLight intensity={1}/>
                         <directionalLight intensity={0.5} position={[10, 10, 10]}/>
                     </Suspense>
-                </Canvas>
+                </Canvas
+
+>
             </div>
             <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space">
                 <a href="#contact" className="w-fit">
