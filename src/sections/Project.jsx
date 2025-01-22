@@ -1,8 +1,24 @@
-import React from 'react'
-import {myProjects} from "../constants/index.js";
+import {Suspense, useState} from 'react'
+import {myProjects} from "../constants/index.js"
+import {Canvas} from "@react-three/fiber";
+import {Center, OrbitControls} from "@react-three/drei";
+import CanvasLoader from "../components/CanvasLoader.jsx";
+import DemoComputer from "../components/DemoComputer.jsx";
+
+const PROJECT_COUNT = myProjects.length
 
 const Project = () => {
-    const currentProject=myProjects[0]
+    const [selectProjectIndex, setSelectProjectIndex] = useState(0)
+    const currentProject=myProjects[selectProjectIndex]
+    const handleNavigation = (direction) => {
+        setSelectProjectIndex((preIndex) => {
+            if (direction === 'previous') {
+                return preIndex === 0 ? PROJECT_COUNT - 1 : preIndex - 1
+            } else {
+                return preIndex === PROJECT_COUNT - 1 ? 0 : preIndex + 1
+            }
+        })
+    }
     return (
         <section className="c-space mt-20" id="project">
             <p className="head-text">My Project</p>
@@ -21,8 +37,30 @@ const Project = () => {
                     </div>
                     <div className="flex items-center justify-between flex-wrap gap-5">
                         <div className="flex items-center gap-3">{currentProject.tags.map((tag, index) => <div key={index} className="tech-logo"><img src={tag.path} alt={tag.name} /></div>)}</div>
-                        <a className="flex items-center gap-2 cursor-pointer text-white-600"><p>Check live site</p><img src="/assets/arrow-up.png" alt="arrowUp" className="w-3 h-3"/></a>
+                        <a className="flex items-center gap-2 cursor-pointer text-white-600" href={currentProject.href} target="_blank" rel="noreferrer"><p>Check live site</p><img src="/assets/arrow-up.png" alt="arrowUp" className="w-3 h-3"/></a>
                     </div>
+                    <div className="flex justify-between items-center mt-7">
+                        <button className="arrow-btn" onClick={() => handleNavigation('previous')}>
+                            <img src="/assets/left-arrow.png" alt="left arrow" className="w-4 h-4"/>
+                        </button>
+                        <button className="arrow-btn" onClick={() => handleNavigation('next')}>
+                            <img src="/assets/right-arrow.png" alt="right arrow" className="w-4 h-4"/>
+                        </button>
+                    </div>
+                </div>
+                <div className="border border-black-300 bg-black-200 rounded-lg h-96 md:h-full">
+                    <Canvas>
+                        <ambientLight intensity={Math.PI} />
+                        <directionalLight position={[10, 10, 5]} />
+                        <Center>
+                            <Suspense fallback={CanvasLoader}>
+                                <group scale={2} position={[0, -3, 0]} rotation={[0, -0.1, 0]}>
+                                    <DemoComputer prjectTexture={currentProject.texture} />
+                                </group>
+                            </Suspense>
+                        </Center>
+                        <OrbitControls maxPolarAngle={Math.PI / 2} enableZoom={false}/>
+                    </Canvas>
                 </div>
             </div>
         </section>

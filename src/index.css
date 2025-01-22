@@ -4,6 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/*内容定位滑动样式*/
 * {
   scroll-behavior: smooth;
 }
@@ -105,7 +106,7 @@ body {
   }
 
   .work-canvas {
-    @apply col-span-1 rounded-lg bg-black-200 border border-black-300;
+    @apply col-span-1 rounded-lg bg-gray-800 border border-gray-900;
   }
 
   .work-content {
@@ -128,7 +129,6 @@ body {
   .contact-container {
     @apply max-w-xl relative z-10 sm:px-10 px-5 mt-12;
   }
-
   .field-label {
     @apply text-lg text-white-600;
   }
