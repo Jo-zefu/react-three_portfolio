@@ -28,7 +28,7 @@ export const clientReviews = [
     position: "Marketing Director at GreenLeaf",
     img: "assets/review1.png",
     review:
-      "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
+      "Working with Helen was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
   },
   {
     id: 2,
@@ -36,7 +36,7 @@ export const clientReviews = [
     position: "Founder of TechGear Shop",
     img: "assets/review2.png",
     review:
-      "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.",
+      "Helen’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.",
   },
   {
     id: 3,
@@ -44,7 +44,7 @@ export const clientReviews = [
     position: "Project Manager at UrbanTech ",
     img: "assets/review3.png",
     review:
-      "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
+      "I can’t say enough good things about Helen. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
   },
   {
     id: 4,
@@ -52,7 +52,7 @@ export const clientReviews = [
     position: "CEO of BrightStar Enterprises",
     img: "assets/review4.png",
     review:
-      "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.",
+      "Helen was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.",
   },
 ];
 
@@ -171,13 +171,13 @@ export const myProjects = [
     ],
   },
   {
-    title: "Horizon - Online Banking Platform",
-    desc: "Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.",
+    title: "Yoom - Zoom Clone",
+    desc: "Yoom is a video conferencing tool like Zoom that users to start a meeting online with team members. With features like login with Clerk, meeting video creating, meeting recording, Previous meeting list management.",
     subdesc:
-      "Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.",
-    href: "https://www.youtube.com/watch?v=PuOVqP_cjkE",
-    texture: "/textures/project/project4.mp4",
-    logo: "/assets/project-logo4.png",
+      "Built with Next.js 14, Clerk, Getstream, Tailwindcss and Shadcn, Yoom replicates Zoom, a widely used video conferencing tool. Publish on Vercel that easy to visit.",
+    href: "jozefu-zoom-clone.vercel.app",
+    texture: "/textures/project/project6.mp4",
+    logo: "/assets/project-logo6.png",
     logoStyle: {
       backgroundColor: "#0E1F38",
       border: "0.2px solid #0E2D58",
@@ -202,8 +202,8 @@ export const myProjects = [
       },
       {
         id: 4,
-        name: "Framer Motion",
-        path: "/assets/framer.png",
+        name: "Clerk",
+        path: "/assets/clerk.png",
       },
     ],
   },
@@ -284,32 +284,32 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
 export const workExperiences = [
   {
     id: 1,
-    name: "Framer",
-    pos: "Lead Web DeveloperGLTF",
-    duration: "2022 - Present",
+    name: "POIZON",
+    pos: "Web Developer",
+    duration: "2021.04 - 2023.02",
     title:
-      "Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
-    icon: "/assets/framer.svg",
+      "POIZON is the curated fashion marketplace for exploring, pursuing, and sharing authenticated premium goods.",
+    icon: "/assets/poison.png",
     animation: "rumbaDancing",
   },
   {
     id: 2,
-    name: "Figma",
-    pos: "Web DeveloperGLTF",
-    duration: "2020 - 2022",
+    name: "Suitbim",
+    pos: "Web Developer",
+    duration: "2017.06 - 2021.04",
     title:
       "Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
-    icon: "/assets/figma.svg",
+    icon: "/assets/suitbim.png",
     animation: "salute",
   },
   {
     id: 3,
-    name: "Notion",
-    pos: "Junior Web DeveloperGLTF",
-    duration: "2019 - 2020",
+    name: "The Knot Worldwide",
+    pos: "Junior Web Developer",
+    duration: "2015.04 - 2017.06",
     title:
       "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
-    icon: "/assets/notion.svg",
+    icon: "/assets/tkww.png",
     animation: "clapping",
   },
 ];
