@@ -298,7 +298,7 @@ export const workExperiences = [
     pos: "Web Developer",
     duration: "2017.06 - 2021.04",
     title:
-      "Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
+      'Suitbim isfocus on urban infrastructure construction and operation management, and strive to become an industry-leading comprehensive information service provider and ecological resource integrator for the entire life cycle of urban infrastructure "planning-design-construction-operation and maintenance-update".',
     icon: "/assets/suitbim.png",
     animation: "salute",
   },
@@ -308,7 +308,7 @@ export const workExperiences = [
     pos: "Junior Web Developer",
     duration: "2015.04 - 2017.06",
     title:
-      "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
+      "The Knot Worldwide is a global technology company that provides content, tools, products and services for couples who are planning weddings, organizing a celebration, and navigating pregnancy and parenting.",
     icon: "/assets/tkww.png",
     animation: "clapping",
   },
