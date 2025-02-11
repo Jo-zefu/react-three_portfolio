@@ -64,7 +64,7 @@ Open [http://localhost:5173](http://localhost:5173) with your browser to see the
 
 <img width="238" alt="image" src="https://github.com/user-attachments/assets/df1930e7-456a-4dcd-a1c9-ec4d4a51b9ad" />
 
-Final display effect
+Final model effect
 
 <video src="https://github.com/user-attachments/assets/d29e40df-b6db-4a9e-8aee-2c6378afdd4e" preload="auto" muted playsinline style="cusor:auto;width:100%;height:100%;display:block;object-fit:contain;object-position: 50% 50%" />
 
