@@ -21,11 +21,17 @@ const DemoComputer = (props) => {
     }
   }, [txt]);
   useGSAP(() => {
-    gsap.from(group.current.rotation, {
+    if (!group.current) return;
+
+    const tl = gsap.from(group.current.rotation, {
       y: Math.PI / 2,
       duration: 1,
       ease: "power3.out",
     });
+
+    return () => {
+      tl.kill();
+    };
   });
   return (
     <group ref={group} {...props} dispose={null}>

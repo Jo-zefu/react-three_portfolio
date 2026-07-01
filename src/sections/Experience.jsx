@@ -4,6 +4,7 @@ import { OrbitControls } from "@react-three/drei";
 import { Suspense, useState } from "react";
 import CanvasLoader from "../components/CanvasLoader.jsx";
 import Developer from "../components/Developer.jsx";
+import WebGLErrorHandler from "../components/WebGLErrorBoundary.jsx";
 
 const Experience = () => {
   const [animationName, setAnimationName] = useState("happy");
@@ -14,6 +15,7 @@ const Experience = () => {
         <div className="work-container">
           <div className="work-canvas">
             <Canvas>
+              <WebGLErrorHandler />
               <ambientLight intensity={7} />
               <spotLight position={[10, 10, 10]} angle={0.15} penula={1} />
               <directionalLight position={[10, 10, 10]} intensity={1} />

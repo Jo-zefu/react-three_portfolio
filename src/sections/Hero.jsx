@@ -11,6 +11,7 @@ import Cube from "../components/Cube.jsx";
 import Rings from "../components/Rings.jsx";
 import HeroCamera from "../components/HeroCamera.jsx";
 import Button from "../components/Button.jsx";
+import WebGLErrorHandler from "../components/WebGLErrorBoundary.jsx";
 
 const Hero = () => {
   const isSmall = useMediaQuery({ maxWidth: 480 });
@@ -27,6 +28,7 @@ const Hero = () => {
       </div>
       <div className="w-full h-full absolute inset-0">
         <Canvas className="w-full h-full">
+          <WebGLErrorHandler />
           <Suspense fallback={<CanvasLoader />}>
             <PerspectiveCamera makeDefault position={[0, 0, 20]} />
             <HeroCamera isMobile={isMobile}>

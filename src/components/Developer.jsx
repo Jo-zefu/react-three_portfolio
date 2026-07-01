@@ -39,9 +39,15 @@ const Developer = ({ animationName = "happy", ...props }) => {
   );
 
   useEffect(() => {
-    actions[animationName].reset().fadeIn(0.5).play();
-    return () => actions[animationName].fadeOut(0.5);
-  }, [animationName]);
+    if (!actions || !actions[animationName]) return;
+
+    const action = actions[animationName];
+    action.reset().fadeIn(0.5).play();
+
+    return () => {
+      action.fadeOut(0.5);
+    };
+  }, [animationName, actions]);
   return (
     <group {...props} dispose={null} ref={group}>
       <primitive object={nodes.Hips} />

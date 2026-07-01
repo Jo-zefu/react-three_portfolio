@@ -18,16 +18,16 @@ const Rings = ({ position }) => {
             if (refList.current.length === 0) return;
 
             refList.current.forEach((r) => {
-                r.position.set(position[0], position[1], position[2]);
+                if (r) r.position.set(position[0], position[1], position[2]);
             });
 
-            gsap
+            const tl = gsap
                 .timeline({
                     repeat: -1,
                     repeatDelay: 0.5,
                 })
                 .to(
-                    refList.current.map((r) => r.rotation),
+                    refList.current.filter(r => r).map((r) => r.rotation),
                     {
                         y: `+=${Math.PI * 2}`,
                         x: `-=${Math.PI * 2}`,
@@ -37,6 +37,10 @@ const Rings = ({ position }) => {
                         },
                     },
                 );
+
+            return () => {
+                tl.kill();
+            };
         },
         {
             dependencies: position,

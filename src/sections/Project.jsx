@@ -4,6 +4,7 @@ import { Canvas } from "@react-three/fiber";
 import { Center, OrbitControls } from "@react-three/drei";
 import CanvasLoader from "../components/CanvasLoader.jsx";
 import DemoComputer from "../components/DemoComputer.jsx";
+import WebGLErrorHandler from "../components/WebGLErrorBoundary.jsx";
 
 const PROJECT_COUNT = myProjects.length;
 
@@ -95,6 +96,7 @@ const Project = () => {
         </div>
         <div className="border border-black-300 bg-black-200 rounded-lg h-96 md:h-full">
           <Canvas>
+            <WebGLErrorHandler />
             <ambientLight intensity={Math.PI} />
             <directionalLight position={[10, 10, 5]} />
             <Center>
