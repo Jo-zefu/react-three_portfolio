@@ -32,11 +32,11 @@ Open [http://localhost:5173](http://localhost:5173) with your browser to see the
 - [React Three Fiber](https://r3f.docs.pmnd.rs/getting-started/introduction) - No Limitations, Everything that works on three.js will work here without exceptions.
 - [React Three Drei](https://drei.docs.pmnd.rs/getting-started/introduction) - Ready-made abstractions for @react-three/fiber
 - [Gasp](https://gsap.com/) - Animate anything
-- [CSS framework](https://tailwindcss.com/) - tailwindcss
+- [Tailwindcss](https://tailwindcss.com/) - CSS framework
 
 ## Deploy on gh-pages
 
-[Production url](https://www.kiddielovestore.com), you could set you own domain on github pages
+[Production url](https://www.vitewebjs.com/), you could set you own domain on github pages
 
 ## More
 [Detail tutorial](https://www.youtube.com/watch?v=kt0FrkQgw8w&t=10665s)
@@ -66,7 +66,7 @@ Open [http://localhost:5173](http://localhost:5173) with your browser to see the
 
 Final model effect
 
-<video src="https://github.com/user-attachments/assets/d29e40df-b6db-4a9e-8aee-2c6378afdd4e" preload="auto" muted playsinline style="cusor:auto;width:100%;height:100%;display:block;object-fit:contain;object-position: 50% 50%" />
+<video src="https://github.com/user-attachments/assets/d29e40df-b6db-4a9e-8aee-2c6378afdd4e" preload="auto" muted playsinline autoplay loop style="cusor:auto;width:100%;height:100%;display:block;object-fit:contain;object-position: 50% 50%" />
 
 
 
