@@ -80,7 +80,7 @@ export const myProjects = [
       {
         id: 2,
         name: "TailwindCSS",
-        path: "assets/tailwindcss.png",
+        path: "/assets/tailwindcss.png",
       },
       {
         id: 3,
@@ -117,7 +117,7 @@ export const myProjects = [
       {
         id: 2,
         name: "TailwindCSS",
-        path: "assets/tailwindcss.png",
+        path: "/assets/tailwindcss.png",
       },
       {
         id: 3,
@@ -135,7 +135,7 @@ export const myProjects = [
     title: "CarePulse - Health Management System",
     desc: "An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.",
     subdesc:
-      "With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.",
+      "With a focus on efficiency, CarePulse integrates complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.",
     href: "https://www.youtube.com/watch?v=lEflo_sc82g",
     texture: "/textures/project/project3.mp4",
     logo: "/assets/project-logo3.png",
@@ -156,7 +156,7 @@ export const myProjects = [
       {
         id: 2,
         name: "TailwindCSS",
-        path: "assets/tailwindcss.png",
+        path: "/assets/tailwindcss.png",
       },
       {
         id: 3,
@@ -175,7 +175,7 @@ export const myProjects = [
     desc: "Yoom is a video conferencing tool like Zoom that users to start a meeting online with team members. With features like login with Clerk, meeting video creating, meeting recording, Previous meeting list management.",
     subdesc:
       "Built with Next.js 14, Clerk, Getstream, Tailwindcss and Shadcn, Yoom replicates Zoom, a widely used video conferencing tool. Publish on Vercel that easy to visit.",
-    href: "jozefu-zoom-clone.vercel.app",
+    href: "https://jozefu-zoom-clone.vercel.app",
     texture: "/textures/project/project6.mp4",
     logo: "/assets/project-logo6.png",
     logoStyle: {
@@ -193,7 +193,7 @@ export const myProjects = [
       {
         id: 2,
         name: "TailwindCSS",
-        path: "assets/tailwindcss.png",
+        path: "/assets/tailwindcss.png",
       },
       {
         id: 3,
@@ -230,7 +230,7 @@ export const myProjects = [
       {
         id: 2,
         name: "TailwindCSS",
-        path: "assets/tailwindcss.png",
+        path: "/assets/tailwindcss.png",
       },
       {
         id: 3,
